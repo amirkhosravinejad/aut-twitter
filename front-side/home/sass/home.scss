@@ -12,7 +12,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   color: #fff;
-  background-color: #222;
 }
 
 .home-page {
@@ -25,13 +24,11 @@ body {
     background: url(../images/photo1637945168\(3\).png);
     background-size: cover;
     height: 100px;
-    width: 16%;
+    width: 17%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 0 10px;
-    position: fixed;
-    z-index: 1;
 
     a {
       display: flex;
@@ -40,7 +37,7 @@ body {
       text-decoration: none;
       color: #fff;
       &:not(:first-child) {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         margin-left: 10px;
       }
 
@@ -55,33 +52,20 @@ body {
         height: 52px;
       }
     }
-    &__button {
-      background-color: #fff;
-      font-weight: 500;
-      font-size: 1.6rem;
-      width: 80%;
-      margin-top: 150px;
-      align-self: center;
-      line-height: 2;
-      padding: 6px;
-      border-radius: 24px;
-      border: none;
-    }
   }
 
   &-body {
     width: 83%;
-    margin-left: auto;
   }
 
   &-header {
     background: url(../images/photo1637945168\(1\).png);
     background-size: cover;
-    height: 75px;
+    width: auto;
+    height: 7.5%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: auto;
     justify-content: space-around;
 
     a {
@@ -142,206 +126,6 @@ body {
   &-main {
     &__picture {
       width: 100%;
-    }
-
-    &__body {
-      position: absolute;
-      top: 329px;
-      display: flex;
-      flex-direction: row;
-      width: 83%;
-    }
-
-    &__profile-and-option {
-      margin-left: 50px;
-    }
-
-    &__profile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background: url(../images/4.png);
-      width: 250px;
-      height: 230px;
-      padding: 20px;
-      background-size: cover;
-      border-radius: 30px;
-
-      &--id {
-        color: rgba($color: #030000, $alpha: 0.55);
-      }
-
-      p {
-        margin-top: 10px;
-        margin-right: 10px;
-      }
-
-      div {
-        &:first-child {
-          min-width: 40px;
-          min-height: 40px;
-          border-radius: 50%;
-          background-color: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        &:last-child {
-          width: 100%;
-          margin-top: auto;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-
-          span {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            p {
-              margin: 0;
-            }
-          }
-        }
-      }
-    }
-
-    &__other-options {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      grid-row-gap: 25px;
-      grid-column-gap: 10px;
-      margin-top: 50px;
-
-      div {
-        background: url(../images/photo1637945168\(4\).png);
-        width: 130px;
-        min-height: 96px;
-        background-size: cover;
-      }
-    }
-
-    &__tweets {
-      margin-left: auto;
-      background-color: #393939;
-      padding: 20px;
-      width: 40%;
-      border-top-left-radius: 30px;
-      border-top-right-radius: 30px;
-
-      &--details {
-        a {
-          text-decoration: none;
-          color: #fff;
-          margin: 20px;
-        }
-      }
-    }
-
-    &__trends-and-know {
-      margin-left: auto;
-      margin-right: 50px;
-    }
-
-    &__trends {
-      background: url(../images/3.png);
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-      background-size: cover;
-      width: 200px;
-      height: 314px;
-
-      header {
-        h3 {
-          margin: 0;
-          padding-bottom: 10px;
-        }
-      }
-
-      main {
-        section {
-          margin-top: 10px;
-          div {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-
-            p {
-              color: #fff;
-            }
-          }
-
-          p {
-            color: rgba($color: #030000, $alpha: 0.35);
-          }
-        }
-      }
-
-      footer {
-        align-self: center;
-        margin-top: auto;
-      }
-    }
-
-    &__know {
-      background: url(../images/6.png);
-      background-size: cover;
-      padding: 15px;
-      height: 216px;
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-
-      &--head {
-        h3 {
-          margin: 0;
-        }
-      }
-
-      &--person {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        &-image {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          background-color: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-right: 10px;
-        }
-
-        &-id,
-        &-name {
-          overflow-x: hidden;
-          width: 10ch;
-          white-space: nowrap;
-          font-size: 1.3rem;
-        }
-
-        &-follow-button {
-          margin-left: auto;
-          height: 30px;
-          border-radius: 15px;
-          padding: 0 15px;
-          font-size: 1.3rem;
-          font-weight: 600;
-          border: none;
-        }
-      }
-
-      footer {
-        align-self: center;
-        margin-top: auto;
-      }
     }
   }
 }

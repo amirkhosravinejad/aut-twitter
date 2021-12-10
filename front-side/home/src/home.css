@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+  /** 10px **/
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: row;
+}
+.home-page-access {
+  position: fixed;
+  background: url(../images/photo1637945168\(3\).png);
+}
+
+/*# sourceMappingURL=home.css.map */

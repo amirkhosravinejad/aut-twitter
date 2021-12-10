@@ -1,5 +1,6 @@
 :root {
   box-sizing: border-box;
+  background-color: black;
 }
 
 html {
@@ -11,24 +12,19 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .home-page {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 100%;
 }
 .home-page-access {
   background: url(../images/photo1637945168\(3\).png);
   background-size: cover;
-  height: 100px;
-  width: 17%;
-  height: 100vh;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
 }
 .home-page-access a {
   display: flex;
@@ -53,6 +49,10 @@ body {
 .home-page-body {
   width: 83%;
 }
+
+.home-page-body {
+  width: 83%;
+}
 .home-page-header {
   background: url(../images/photo1637945168\(1\).png);
   background-size: cover;
@@ -67,6 +67,7 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
 .home-page-header__search {
   background-color: #fff;
   display: flex;
@@ -81,7 +82,6 @@ body {
   padding: 5px 10px;
 }
 .home-page-header__search--search-bar {
-  width: 60ch;
   line-height: 1.8;
   border: 0;
   border-radius: 10px;
@@ -109,8 +109,89 @@ body {
   align-items: center;
   justify-content: center;
 }
-.home-page-main__picture {
-  width: 100%;
+/*****************/
+.trends-for-you {
+  position: relative;
+  background-image: url("../images/photo1637945168\(3\).png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding-top: 5px;
+  color: white;
 }
 
-/*# sourceMappingURL=home.css.map */
+.trends-for-you h1 {
+  font-size: 130%;
+  margin-bottom: 50px;
+}
+.see-more {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+.see-more a {
+  text-decoration: none;
+  color: white;
+}
+/******************/
+.article-middle-top {
+  width: 100%;
+  text-align: left;
+  color: white;
+}
+.article-middle-top img {
+  margin-right: 5px;
+}
+
+.article-middle-middle {
+  color: white;
+}
+.article-middle-middle h1 {
+  display: inline;
+}
+/*****************/
+.you-should-follow {
+  position: relative;
+  background-image: url("../images/photo1637945168\(3\).png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding-top: 5px;
+  color: white;
+}
+
+.you-should-follow h1 {
+  font-size: 130%;
+  margin-bottom: 50px;
+}
+.you-should-follow input {
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-left: 40px;
+}
+
+.follow-recommend {
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 10px;
+}
+.follow-recommend p {
+  display: inline;
+}
+.see-all {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 5px;
+}
+.see-all a {
+  text-decoration: none;
+  color: white;
+}
+/***************/
+
