@@ -1,0 +1,294 @@
+:root {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /** 10px **/
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #222;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.home-page-access {
+  background: url(../images/photo1637945168\(3\).png);
+  background-size: cover;
+  height: 100px;
+  width: 16%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  position: fixed;
+  z-index: 1;
+}
+.home-page-access a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+.home-page-access a:not(:first-child) {
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+.home-page-access a img {
+  margin-right: 10px;
+}
+.home-page-access__logo {
+  margin-bottom: 70px;
+}
+.home-page-access__logo img {
+  height: 52px;
+}
+.home-page-access__button {
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+  width: 80%;
+  margin-top: 150px;
+  align-self: center;
+  line-height: 2;
+  padding: 6px;
+  border-radius: 24px;
+  border: none;
+}
+.home-page-body {
+  width: 83%;
+  margin-left: auto;
+}
+.home-page-header {
+  background: url(../images/photo1637945168\(1\).png);
+  background-size: cover;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+  justify-content: space-around;
+}
+.home-page-header a {
+  text-decoration: none;
+  color: #fff;
+}
+.home-page-header__search {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+.home-page-header__search button {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.home-page-header__search--search-bar {
+  width: 60ch;
+  line-height: 1.8;
+  border: 0;
+  border-radius: 10px;
+}
+.home-page-header__search--search-bar::placeholder {
+  color: #808080;
+}
+.home-page-header__search--search-bar:focus {
+  outline: 0;
+}
+.home-page-header__profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.home-page-header__profile p {
+  margin-right: 10px;
+}
+.home-page-header__profile div {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-page-main__picture {
+  width: 100%;
+}
+.home-page-main__body {
+  position: absolute;
+  top: 329px;
+  display: flex;
+  flex-direction: row;
+  width: 83%;
+}
+.home-page-main__profile-and-option {
+  margin-left: 50px;
+}
+.home-page-main__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../images/4.png);
+  width: 250px;
+  height: 230px;
+  padding: 20px;
+  background-size: cover;
+  border-radius: 30px;
+}
+.home-page-main__profile--id {
+  color: rgba(3, 0, 0, 0.55);
+}
+.home-page-main__profile p {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.home-page-main__profile div:first-child {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-page-main__profile div:last-child {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.home-page-main__profile div:last-child span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-page-main__profile div:last-child span p {
+  margin: 0;
+}
+.home-page-main__other-options {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 25px;
+  grid-column-gap: 10px;
+  margin-top: 50px;
+}
+.home-page-main__other-options div {
+  background: url(../images/photo1637945168\(4\).png);
+  width: 130px;
+  min-height: 96px;
+  background-size: cover;
+}
+.home-page-main__tweets {
+  margin-left: auto;
+  background-color: #393939;
+  padding: 20px;
+  width: 40%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.home-page-main__tweets--details a {
+  text-decoration: none;
+  color: #fff;
+  margin: 20px;
+}
+.home-page-main__trends-and-know {
+  margin-left: auto;
+  margin-right: 50px;
+}
+.home-page-main__trends {
+  background: url(../images/3.png);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-size: cover;
+  width: 200px;
+  height: 314px;
+}
+.home-page-main__trends header h3 {
+  margin: 0;
+  padding-bottom: 10px;
+}
+.home-page-main__trends main section {
+  margin-top: 10px;
+}
+.home-page-main__trends main section div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-page-main__trends main section div p {
+  color: #fff;
+}
+.home-page-main__trends main section p {
+  color: rgba(3, 0, 0, 0.35);
+}
+.home-page-main__trends footer {
+  align-self: center;
+  margin-top: auto;
+}
+.home-page-main__know {
+  background: url(../images/6.png);
+  background-size: cover;
+  padding: 15px;
+  height: 216px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.home-page-main__know--head h3 {
+  margin: 0;
+}
+.home-page-main__know--person {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.home-page-main__know--person-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.home-page-main__know--person-id, .home-page-main__know--person-name {
+  overflow-x: hidden;
+  width: 10ch;
+  white-space: nowrap;
+  font-size: 1.3rem;
+}
+.home-page-main__know--person-follow-button {
+  margin-left: auto;
+  height: 30px;
+  border-radius: 15px;
+  padding: 0 15px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+}
+.home-page-main__know footer {
+  align-self: center;
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=home.css.map */
