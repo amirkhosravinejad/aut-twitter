@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-0mbdrsi#1xlwa4)lcah&-h)g7@nvrehfg8%2+w#xppp+rg)gcf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    #'aut_twitter.apps.AutTwitterConfig',
+    'aut_twitter',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +57,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'aut_twitter/templates/aut_twitter'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,9 +77,18 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+    #'default': {
+     #  'ENGINE': 'django.db.backends.sqlite3',
+      #  'NAME': BASE_DIR / 'db.sqlite3',
+    #}
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    # MySQL engine. Powered by the mysqlclient module.
+    'ENGINE': 'django.db.backends.mysql',
+    'NAME': 'dbproject',
+    'USER': 'root',
+    'PASSWORD': 'Mp amir63',
+    'HOST': '127.0.0.1',
+    'PORT': 3306,
     }
 }
 
@@ -123,3 +135,8 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
