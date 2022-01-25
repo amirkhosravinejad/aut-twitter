@@ -15,6 +15,27 @@ body {
   background-color: #222;
 }
 
+.write-tweet {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.write-tweet textarea {
+  outline: none;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  border-radius: 25px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 10px;
+}
+
 .home-page {
   display: flex;
   flex-direction: row;
@@ -207,6 +228,36 @@ body {
   color: #fff;
   margin: 20px;
 }
+.home-page-main__tweets--list {
+  width: 100%;
+}
+.home-page-main__tweet {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.home-page-main__tweet--details {
+  width: 100%;
+  border-radius: 15px;
+  border-top-left-radius: 0;
+  border: 1px solid #fff;
+}
+.home-page-main__tweet--options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.home-page-main__tweet--options section {
+  display: flex;
+  flex-direction: row;
+}
+.home-page-main__tweet--options section img:last-child {
+  width: 15px;
+}
+.home-page-main__tweet--options section p {
+  margin-left: 5px;
+}
 .home-page-main__trends-and-know {
   margin-left: auto;
   margin-right: 50px;
@@ -289,6 +340,75 @@ body {
 .home-page-main__know footer {
   align-self: center;
   margin-top: auto;
+}
+
+.container-login100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrap-login100-form-btn {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  border-radius: 25px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -moz-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -webkit-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -o-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  -ms-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+}
+
+.login100-form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: #a64bf4;
+  background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  top: 0;
+  left: -100%;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.login100-form-btn {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+}
+
+.wrap-login100-form-btn:hover .login100-form-bgbtn {
+  left: 0;
 }
 
 /*# sourceMappingURL=home.css.map */
