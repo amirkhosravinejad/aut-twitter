@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'rest_framework',
     #'aut_twitter.apps.AutTwitterConfig',
     'aut_twitter',
+<<<<<<< HEAD
     'home',
+=======
+>>>>>>> b28e892e132bbf547a3bf56658d604d1bd197493
 ]
 
 MIDDLEWARE = [

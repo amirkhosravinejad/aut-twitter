@@ -178,7 +178,10 @@ iframe {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+<<<<<<< HEAD
   background: url('images/bg-01.jpg');
+=======
+>>>>>>> b28e892e132bbf547a3bf56658d604d1bd197493
 }
 
 .wrap-login100 {
