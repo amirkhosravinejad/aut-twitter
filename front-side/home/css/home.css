@@ -12,7 +12,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   color: #fff;
-  background-color: #222;
 }
 
 .write-tweet {
@@ -46,13 +45,11 @@ body {
   background: url(../images/photo1637945168\(3\).png);
   background-size: cover;
   height: 100px;
-  width: 16%;
+  width: 17%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 0 10px;
-  position: fixed;
-  z-index: 1;
 }
 .home-page-access a {
   display: flex;
@@ -62,7 +59,7 @@ body {
   color: #fff;
 }
 .home-page-access a:not(:first-child) {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   margin-left: 10px;
 }
 .home-page-access a img {
@@ -74,30 +71,17 @@ body {
 .home-page-access__logo img {
   height: 52px;
 }
-.home-page-access__button {
-  background-color: #fff;
-  font-weight: 500;
-  font-size: 1.6rem;
-  width: 80%;
-  margin-top: 150px;
-  align-self: center;
-  line-height: 2;
-  padding: 6px;
-  border-radius: 24px;
-  border: none;
-}
 .home-page-body {
   width: 83%;
-  margin-left: auto;
 }
 .home-page-header {
   background: url(../images/photo1637945168\(1\).png);
   background-size: cover;
-  height: 75px;
+  width: auto;
+  height: 7.5%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: auto;
   justify-content: space-around;
 }
 .home-page-header a {
@@ -149,6 +133,7 @@ body {
 .home-page-main__picture {
   width: 100%;
 }
+<<<<<<< HEAD
 .home-page-main__body {
   position: absolute;
   top: 329px;
@@ -341,6 +326,8 @@ body {
   align-self: center;
   margin-top: auto;
 }
+=======
+>>>>>>> refs/remotes/origin/front-end
 
 .container-login100-form-btn {
   display: -webkit-box;
